@@ -3,49 +3,49 @@ datetime-format: "H:i:s"
 Motd:
   update-timeout: 1
   custom: true
-  message: "&e[{TIME}] &aWelcome to your server! &n&b[{TOTALPLAYERS}/{MAXPLAYERS}]"
+  message: "&e[{TIME}] &a欢迎来到本服务器! &n&b[{TOTALPLAYERS}/{MAXPLAYERS}]"
 OutdatedClient:
   custom: true
-  message: "&cYour MCPE client is outdated!"
+  message: "&c你的《Minecraft》版本与服务器所支持的版本不一致,暂时无法进服!"
 OutdatedServer:
   custom: true
-  message: "&cOops! Server outdated!"
+  message: "&c很抱歉,此服务器所支持的《Minecraft》版本过低,您暂时无法进服!"
 WhitelistedServer:
   custom: true
-  message: "&c&oThis Server is whitelisted!"
+  message: "&c&o很抱歉,此服务器已开启白名单!"
 FullServer:
   custom: true
-  message: "&e{PLAYER}&b, The Server is full &c[{TOTALPLAYERS}/{MAXPLAYERS}]&b!\n&l&dTry to join later :)"
+  message: "&e{PLAYER}&b,很抱歉,此服务器已接近满员 &c[{TOTALPLAYERS}/{MAXPLAYERS}]&b!\n&l&d请您稍后再进行连接:)"
 FirstJoin:
   enable: true
-  message: "&2[{TIME}] &a{PLAYER}&d joined the game for the first time."
+  message: "&2[{TIME}] &a{PLAYER}&d 第一次加入本服务器,大家热情欢迎吧."
 Join:
   hide: false
   custom: true
-  message: "&2[{TIME}] &a{PLAYER}&e joined the game."
+  message: "&2[{TIME}] &a{PLAYER}&e 加入了本服务器."
 Quit:
   hide: true
   custom: false
-  message: "&4[{TIME}] &c{PLAYER}&e has left the game"
+  message: "&4[{TIME}] &c{PLAYER}&e 离开了本服务器"
 WorldChange:
   enable: true
-  message: "&2[{TIME}] &a{PLAYER}&e moved from &c{ORIGIN}&e to &a{TARGET}"
+  message: "&2[{TIME}] &a{PLAYER}&e 从 &c{ORIGIN}&e 到 &a{TARGET}"
 Death:
   hide: false
   custom: true
-  message: "&c{PLAYER} died"
+  message: "&c{PLAYER} 不知道怎么就一命呜呼了"
   death-contact-message:
     hide: false
     custom: true
-    message: "&cOops! {PLAYER} was killed by {BLOCK}"
+    message: "&cOops! {PLAYER} 被卡在 {BLOCK} 里窒息而死"
   kill-message:
     hide: false
     custom: true
-    message: "&9{PLAYER} &ewas killed by &c{KILLER}"
+    message: "&9{PLAYER} &e被 &c{KILLER} 终结啦"
   death-projectile-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} was killed by {KILLER} by arrow"
+    message: "&c{PLAYER} 被 {KILLER} 射死啦"
   death-suffocation-message:
     hide: false
     custom: true
@@ -53,37 +53,37 @@ Death:
   death-fall-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} fell from a high place"
+    message: "&c{PLAYER} 一不小心就摔死啦"
   death-fire-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} went up in flames"
+    message: "&c{PLAYER} 被烤成焦炭"
   death-on-fire-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} burned"
+    message: "&c{PLAYER} 被烤成焦炭"
   death-lava-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} tried to swim in lava"
+    message: "&c{PLAYER} 喜欢在岩浆里游泳而死"
   death-drowning-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} drowned"
+    message: "&c{PLAYER} 淹死了"
   death-explosion-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} exploded"
+    message: "&c{PLAYER} 爆炸了"
   death-void-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} fell into the void"
+    message: "&c{PLAYER} 在与虚空争斗中不幸牺牲"
   death-suicide-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} committed suicide"
+    message: "&c{PLAYER} 自杀了"
   death-magic-message:
     hide: false
     custom: true
-    message: "&c{PLAYER} was killed by a spell"
+    message: "&c{PLAYER} 被魔法杀死"
 ...
