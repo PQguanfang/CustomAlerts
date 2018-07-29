@@ -34,13 +34,13 @@ class Commands extends PluginCommand {
     				$args[0] = strtolower($args[0]);
     				if($args[0]=="help"){
     					if($sender->hasPermission("customalerts.help")){
-    					    $sender->sendMessage($this->getPlugin()->translateColors("&", "&b-- &aAvailable Commands &b--"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts help &b-&a Show help about this plugin"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts info &b-&a Show info about this plugin"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts reload &b-&a Reload the config"));
+    					    $sender->sendMessage($this->getPlugin()->translateColors("&", "&b-- &a 可供使用的指令 &b--"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts help &b-&a 展示本插件帮助内容"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts info &b-&a 展示本插件介绍内容"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts reload &b-&a 重新加载本插件的配置文件"));
     						break;
     					}else{
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&cYou don't have permissions to use this command"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&c您没有足够的权限"));
     						break;
     					}
     				}elseif($args[0]=="info"){
@@ -49,7 +49,7 @@ class Commands extends PluginCommand {
     						$sender->sendMessage($this->getPlugin()->translateColors("&", CustomAlerts::PREFIX . "&aWebsite &d" . CustomAlerts::MAIN_WEBSITE));
     				        break;
     					}else{
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&cYou don't have permissions to use this command"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&c您没有足够的权限"));
     						break;
     					}
     				}elseif($args[0]=="reload"){
@@ -59,30 +59,30 @@ class Commands extends PluginCommand {
     						if(!CustomAlerts::getAPI()->isMotdCustom()){
     							CustomAlerts::getAPI()->setMotdMessage($this->getPlugin()->getServer()->getMotd());
     						}
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", CustomAlerts::PREFIX . "&aConfiguration Reloaded."));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", CustomAlerts::PREFIX . "&a成功重新读取本插件的配置文件."));
     				        break;
     					}else{
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&cYou don't have permissions to use this command"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&c您没有足够的权限"));
     						break;
     					}
     				}else{
     					if($sender->hasPermission("customalerts")){
-    						$sender->sendMessage($this->getPlugin()->translateColors("&",  CustomAlerts::PREFIX . "&cSubcommand &a" . $args[0] . " &cnot found. Use &a/calerts help &cto show available commands"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&",  CustomAlerts::PREFIX . "&c子指令 &a" . $args[0] . " &c没有被找到,请使用 &a/calerts help &c来获取本插件所有可用的指令"));
     						break;
     					}else{
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&cYou don't have permissions to use this command"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&c您没有足够的权限"));
     						break;
     					}
     				}
     				}else{
     					if($sender->hasPermission("customalerts.help")){
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&b-- &aAvailable Commands &b--"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts help &b-&a Show help about this plugin"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts info &b-&a Show info about this plugin"));
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts reload &b-&a Reload the config"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&b-- &a可供使用的指令 &b--"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts help &b-&a 展示本插件帮助内容"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts info &b-&a 展示本插件介绍内容"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&d/calerts reload &b-&a 重新加载本插件的配置文件"));
     						break;
     					}else{
-    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&cYou don't have permissions to use this command"));
+    						$sender->sendMessage($this->getPlugin()->translateColors("&", "&c您没有足够的权限"));
     						break;
     					}
     				}
